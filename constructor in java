@@ -1,0 +1,162 @@
+
+package javaoop;
+
+public class OopBasic {
+    
+    String name,id;
+    long phon;
+    
+    // constructor part
+    
+    
+     OopBasic()
+    {
+        // it called a default constructor
+        
+    }  
+     
+     
+     // this is parameterized constructor
+     
+       OopBasic(int an)
+    {
+        int result = an*3;
+        System.out.println(result);
+    }
+       
+
+    // this is also perameterized constructor
+       
+    OopBasic(String name,String id, long phon)
+    {
+        this.name = name;
+        this.id = id;
+        this.phon = phon;
+    
+    }
+   
+
+    
+        // this display() is a method which have no return type
+    
+       void display()
+    {
+        System.out.println("name : " + name);
+        System.out.println("id : " + id);
+        System.out.println("phone : " + phon);
+        
+        
+        System.out.println("\n\n");
+        
+    } 
+    
+    
+      // this is also a method , what  can we use initial any object by dot . operator
+       // obj4
+    void setinfo(String name, String id , long phon)
+    {
+       this.name = name;
+       this.id  = id;
+       this.phon = phon;
+    }
+    
+    
+    
+    
+}
+
+
+                       ** let's make another class**'
+                       
+                       
+                       
+
+
+package javaoop;
+
+
+public class Teacher {
+    public static void main(String[] args) {
+        
+        OopBasic teacher1 = new OopBasic("shimul","sahimul12",112);
+        teacher1.display();
+        
+       
+        
+        
+        OopBasic teacher2 = new OopBasic("maruf", "marnf", 3232);
+        teacher2.display();
+        
+        
+      
+        
+        
+        OopBasic obj2 = new OopBasic("karim", "karim123", 123);
+        obj2.display();
+        
+        // this obj3 object will go  on a single perameterized constructor and work
+        
+        OopBasic obj3 = new OopBasic(4);
+        
+        
+        
+        
+        
+        // this is default like that if you have no constuctor 
+        // you can call a method which recive three data 
+        // three local variable 
+        // and compare with instant variable 
+        // method name setinfo()
+                                
+        OopBasic obj4 = new OopBasic();
+        
+        obj4.setinfo("asid", "asifaed ad", 2324);
+        obj4.display();
+
+        
+      
+       
+     
+        
+    }
+    
+}
+
+
+
+
+
+
+                             ** out put **
+                             ** out put must have main method **
+                             run:
+name : shimul
+id : sahimul12
+phone : 112
+
+
+
+name : maruf
+id : marnf
+phone : 3232
+
+
+
+name : karim
+id : karim123
+phone : 123
+
+
+
+12
+name : asid
+id : asifaed ad
+phone : 2324
+
+
+
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+
+
+
