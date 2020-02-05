@@ -1,0 +1,51 @@
+# Learn-Java-OOP
+learn java object oriented programming with sabbu 
+
+
+
+package javaoop;
+
+public class OopBasic {
+    
+    String name,id;
+    long phon;
+    
+    // constructor part
+    
+    
+     OopBasic()
+    {
+        // it called a default constructor
+        
+    }  
+     
+     
+     // this is parameterized constructor
+     
+       OopBasic(int an)
+    {
+        int result = an*3;
+        System.out.println(result);
+    }
+       
+
+    // this is also perameterized constructor
+       
+    OopBasic(String name,String id, long phon)
+    {
+        this.name = name;
+        this.id = id;
+        this.phon = phon;
+    
+    }
+   
+   
+    //              overloading constructor like that 
+     //                  the same constructor but different perameter  
+       
+    
+    
+    
+   
+
+}
