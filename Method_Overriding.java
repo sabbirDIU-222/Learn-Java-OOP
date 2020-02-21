@@ -75,3 +75,23 @@ class test
     }
    
 }
+
+
+
+
+
+
+
+            ** output **
+            
+        run:
+this is overriding method
+dada  32 33
+this method is in Methid_overriding class
+oli  44
+    
+    
+    
+BUILD SUCCESSFUL (total time: 0 seconds)
+        
+                
