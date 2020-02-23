@@ -1,0 +1,166 @@
+
+package hello;
+
+
+public class Check {
+    
+    private int id;
+    private String name;
+    private int phone;
+
+    Check(String name,int id,int phone)
+    {
+       setCheck(name,id,phone);
+    }
+    
+    
+    
+    
+    public final void setCheck(String name,int id,int phone)
+    {
+        this.name = name;
+        this.id = id;
+        this.phone = phone;
+    }
+    
+  
+    
+    
+    
+    public int getId() {
+        return id;
+    }
+
+    
+
+ public String getName() {
+        return name;
+    }
+
+   
+    public int getPhone() {
+        return phone;
+    }
+
+   
+    // constructor part
+    
+    Check()
+    {
+        
+    }
+    // this is not nesseary 
+    /*
+    void print()
+    {
+        System.out.println("name : " + name);
+        System.out.println("id : " + id);
+        System.out.println("phone : " + phone);
+    }*/
+    
+    
+}
+
+
+
+
+
+
+
+
+
+///////////
+
+
+
+
+
+
+
+
+
+
+package hello;
+
+
+public class Test extends Check {
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    
+    public final void setTest(String name,int id,int phone,String address)
+    {
+        setCheck(name,id,phone);
+        this.address = address;
+        
+    }
+    Test()
+    {
+        
+    }
+    
+    Test(String name,int id,int phone,String address)
+    {
+        setTest(name, id, phone,address);
+        
+    }
+    
+    void showdata()
+    {
+        System.out.println("name is " + getName());
+        System.out.println("id is " + getId());
+        System.out.println("phone is " + getPhone());
+        System.out.println("address is " + getAddress());
+    }
+    
+      
+}
+
+
+/////////
+
+
+
+
+package hello;
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+        
+ 
+        Test obj = new Test("sabbir",1212,3333,"dhaka");
+        
+        //obj.setTest("sabbir", 123, 1212, "dhaka");
+        obj.showdata();
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+**** output ***
+
+
+run:
+name is sabbir
+id is 1212
+phone is 3333
+address is dhaka
+
+
+BUILD SUCCESSFUL (total time: 0 seconds)
+
