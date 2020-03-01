@@ -1,0 +1,53 @@
+
+package javaoop;
+
+// in this class we made a method 
+// in total we can have anything 
+
+
+public class Annoymous {
+    
+    
+    // we creatin a methdd in this class
+    public void show()
+    {
+        System.out.println("hello ! i am md sabbir");
+    }
+    // and we make a test class for creating an object of Annoymous class
+    
+}
+
+// we create another class 
+// which have main method or not
+
+
+
+package javaoop;
+
+
+public class Test {
+    
+    public static void main(String[] args) {
+        // this we made annyompous class
+        
+        Annoymous ans = new Annoymous()
+        {
+            
+            @Override
+            public void show()
+            {
+                System.out.println("no name class");
+            }
+        };  //remember if this semicolon
+    }
+    
+}
+
+
+       Difference between Normal/Regular class and Anonymous Inner class:
+
+
+**A normal class can implement any number of interfaces but anonymous inner class can implement only one interface at a time.
+**A regular class can extend a class and implement any number of interface simultaneously. 
+But anonymous Inner class can extend a class or can implement an interface but not both at a time.
+**For regular/normal class, we can write any number of constructors but we cant write any constructor for anonymous Inner class because anonymous class does not have any name and while defining constructor class name and constructor name must be same.
