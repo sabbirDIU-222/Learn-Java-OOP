@@ -1,0 +1,134 @@
+
+package Interfaces;
+
+// java intefaces examples 
+// in abstract class we can use non abstract method and variable
+// but ini java interfaces it gonnna to be fully abstraction 
+// in interfaces we only can use abstract method in java
+// no other method 
+// if you write any non abstract method '
+// jvm atumatically convert it into abstract method 
+//************************/*
+/*let's see what gonna happen
+*/
+
+
+
+
+
+public interface Animal {
+    // you can use variable 
+    // but it must be final 
+
+    
+    public void eat();
+    // java compailer automatically insert it like
+    public abstract void eatDinner();
+   
+    
+    
+}
+
+
+*************************
+package Interfaces;
+
+
+public interface homo extends Animal{
+    // when we inherite interfaces to interface 
+    // we easily make it extends 
+    //
+    
+    public void eat();
+    public void sleep();
+    
+}
+
+*****************
+
+package Interfaces;
+// we can use mulitpale interfaces 
+public class Dog implements Animal,homo{
+    // if we inherite interfaces class into any normal classs
+    // we need to use  implements keyword
+    // it's also mendatory when we inherite it into any abstract class
+    /*
+    public abstract class Dog implements Animal{
+    }
+    
+    */
+    // in java we can not use munltiple inheritance 
+    // but using in interfaces 
+    // or with the help of interfaces 
+    // we can use mulitplae interfaces
+    // but if we found same method into two interfaces 
+    // we can only implement one
+
+    @Override
+    public void eat() {
+        System.out.println("dog can eat ");
+    }
+
+    @Override
+    public void eatDinner() {
+        System.out.println("dog can eat dinner");
+    }
+    
+    public void sleep()
+    {
+        System.out.println("dog sleep less");
+    }
+}
+
+
+
+*******************************
+
+package Interfaces;
+
+public class Main {
+    // in  mian method we can not create object of interfaces classs
+    // like abstract classs
+    // so we can make object opf those class which have implements by 
+    // super class
+    public static void main(String[] args) {
+        // we can make reference of Animal class
+        // we also make Anonymous class of Animal class
+        /*
+        
+        Animal ani = new Animal()
+        {
+        implements all override method 
+        };
+        
+        
+        
+        
+        */
+        // we make a reference of Animal class
+      Animal ani = new Dog();
+      ani.eat();
+      
+      // but we can directly make a object of dog class
+      Dog dog = new Dog();
+      dog.eat();
+      dog.eatDinner();
+      dog.sleep();
+    }
+}
+
+
+
+
+*******************************************************output****************************
+run:
+dog can eat 
+dog can eat 
+dog can eat dinner
+dog sleep less
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+
+
+
+
