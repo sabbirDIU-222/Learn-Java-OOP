@@ -52,24 +52,46 @@ public class ExceptionHandling3 {
         } 
         while(count==0);
         
-        
-   
-        
-        
-        
+  
         
     }
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
+
+
+
+
+output
+
+run:
+enter num1: 10
+enter num2: 0
+Exception :java.lang.ArithmeticException: / by zero
+Enter currect value
+Good luck
+enter num1: 3
+enter num2: 88888
+result:0
+Good luck
+BUILD SUCCESSFUL (total time: 13 seconds)
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
