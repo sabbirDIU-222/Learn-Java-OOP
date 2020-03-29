@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class FileHandling5 {
     public static void main(String[] args) {
         
+        /*            read into a file java program */
+        
         
         try{
             // first need to allocate the file 
