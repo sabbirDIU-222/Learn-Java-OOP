@@ -56,3 +56,15 @@ public class DateClass implements Runnable{
     
     }    
 }
+
+
+************** output **************
+
+run:
+inside the main method main
+inside the run method : this t1 go tor run method
+local date today is : 2020-04-08
+yesterday date is : 2020-04-07
+tomorrow date  is : 2020-04-09
+this is from main time in: 13:34:59.165
+BUILD SUCCESSFUL (total time: 5 seconds)
