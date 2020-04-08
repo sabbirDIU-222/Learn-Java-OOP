@@ -1,17 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+**********           leran about join method *************
 package multi_thread;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author User
- */
+
 public class Multithread extends Thread{
     int num;
     
@@ -66,3 +59,10 @@ class test{
     }  
   
 }
+
+***********************88 out put **************************88
+    run:
+0
+100000
+BUILD SUCCESSFUL (total time: 0 seconds)
+
