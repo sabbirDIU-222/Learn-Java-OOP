@@ -91,3 +91,11 @@ class Miann
     }
     
 }
+
+
+/*
+run:
+annonymous inner class
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+*/
