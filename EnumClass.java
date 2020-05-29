@@ -25,3 +25,8 @@ class Test{
         System.out.println(EnumClass.sabbir +  "  hate "+ i);
     }
 }
+
+/*
+sabbir  love samiwon
+BUILD SUCCESSFUL (total time: 0 seconds)
+*/
