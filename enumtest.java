@@ -55,3 +55,26 @@ enum constant
     
     
 }
+
+ / **************** output *******************/
+run:
+sabbir vlo chele 22
+samiwon poca meye 21
+nobel stupid 17
+sinthia talkative 21
+mahin fotka 20
+
+new line to check with EnumSet class static method range
+
+samiwon poca meye 21
+nobel stupid 17
+sinthia talkative 21
+mahin fotka 20
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+
+
+
+
+
+
